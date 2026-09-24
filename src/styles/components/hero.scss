@@ -47,6 +47,7 @@
         @media (width <= $breakpoint-sm) {
             margin-top: 200px;
             justify-content: flex-end;
+            padding-left: 50px;
         }
     }
 
@@ -59,5 +60,14 @@
     .hero__boutons {
         display: flex;
         gap: 30px;
+
+        @media (width <= $breakpoint-md) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        @media (width <= $breakpoint-sm) {
+            flex-direction: row;
+        }
     }
 }

@@ -1,0 +1,42 @@
+.a__propos {
+    background-color: var(--color-bg-secondary);
+    padding: 100px 0;
+
+    .wrapper {
+        display: flex;
+        gap: 210px;
+        align-items: center;
+
+        @media (width <= $breakpoint-sm) {
+            flex-direction: column;
+            gap: 50px;
+        }
+    }
+
+    .a__propos__content {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        h2 {
+            text-transform: uppercase;
+        }
+
+        @media (width <= $breakpoint-sm) {
+            align-self: start;
+            padding-left: 50px;
+            width: 100%;
+        }
+    }
+
+    .a__propos__media {
+        img {
+            border: 3px solid var(--color-secondary);
+            border-radius: 10px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+}
