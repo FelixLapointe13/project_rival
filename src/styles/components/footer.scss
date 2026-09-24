@@ -1,0 +1,33 @@
+.footer {
+    background-color: var(--color-bg-secondary);
+    padding: 50px 0;
+
+    .footer__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .logo_rival {
+        height: 100%;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        img {
+            height: 70px;
+        }
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        list-style: none;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 50px;
+    }
+}

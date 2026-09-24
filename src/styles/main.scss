@@ -1,3 +1,4 @@
+@import '../../node_modules/swiper/swiper-bundle';
 //FONTS
 // ici sont chargés les fonts
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
@@ -28,5 +29,6 @@
 // COMPONENTS
 // Composants d'interface utilisateur spécifiques.
 // C’est là que la majorité de notre travail a lieu.
+@import 'components/footer';
 @import 'components/header';
 @import 'components/icons';
