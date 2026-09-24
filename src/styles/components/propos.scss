@@ -7,7 +7,7 @@
         gap: 210px;
         align-items: center;
 
-        @media (width <= $breakpoint-sm) {
+        @media (width <= $breakpoint-md) {
             flex-direction: column;
             gap: 50px;
         }
@@ -22,7 +22,7 @@
             text-transform: uppercase;
         }
 
-        @media (width <= $breakpoint-sm) {
+        @media (width <= $breakpoint-md) {
             align-self: start;
             padding-left: 50px;
             width: 100%;
