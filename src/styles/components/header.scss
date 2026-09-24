@@ -20,5 +20,18 @@
         align-items: center;
         gap: 50px;
         list-style: none;
+
+        @media (width <= $breakpoint-sm) {
+            display: none;
+        }
+    }
+
+    .icone {
+        display: none;
+        color: var(--color-white);
+
+        @media (width <= $breakpoint-sm) {
+            display: block;
+        }
     }
 }
