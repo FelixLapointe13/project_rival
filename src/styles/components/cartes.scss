@@ -21,3 +21,45 @@
         text-align: left;
     }
 }
+
+.cartes_chasses {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin: 100px 0;
+}
+
+.carte_chasse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .carte_chasse_content {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        text-align: end;
+        width: 650px;
+        gap: 30px;
+        padding: 30px 60px;
+        border: 10px solid var(--color-secondary);
+        border-radius: 10px;
+    }
+
+    .carte_chasse_media {
+        img {
+            height: 480px;
+            transform: rotate(10deg);
+        }
+    }
+
+    .media__gauche {
+        img {
+            transform: rotate(-10deg);
+        }
+    }
+
+    .content__gauche {
+        align-items: flex-start;
+        text-align: left;
+    }
+}
