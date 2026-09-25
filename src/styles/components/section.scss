@@ -89,6 +89,10 @@
         display: flex;
         justify-content: center;
         gap: 30px;
+
+        @media (width <= $breakpoint-md) {
+            gap: 15px;
+        }
     }
 
     .swiper-pagination-bullet {
