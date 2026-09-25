@@ -1,3 +1,39 @@
 .section {
     padding: 100px 0;
+    text-align: center;
+}
+
+.accueil__contexte {
+    .contexte__content {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+
+        @media (width <= $breakpoint-md) {
+            flex-direction: column;
+            gap: 50px;
+        }
+    }
+
+    p {
+        width: 50%;
+
+        @media (width <= $breakpoint-md) {
+            align-self: start;
+            padding-left: 50px;
+            width: 100%;
+        }
+    }
+
+    img {
+        height: 226px;
+        width: 32.5%;
+        object-fit: cover;
+
+        @media (width <= $breakpoint-md) {
+            width: 80%;
+        }
+    }
 }
