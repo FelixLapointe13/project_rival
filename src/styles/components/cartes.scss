@@ -2,9 +2,22 @@
     border: 10px solid var(--color-secondary);
     border-radius: 10px;
     padding: 20px 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     .carte__media {
+        img {
+            border-radius: 18px;
+        }
+    }
+
+    .media__produit {
+        img {
+            height: 260px;
+        }
     }
 
     .carte__content {
+        text-align: left;
     }
 }

@@ -79,8 +79,26 @@
     }
 }
 
-.carousels__cartes {
+.carousels__cartes,
+.carousels__produits {
     .carousel {
         margin: 100px 0;
+    }
+
+    .swiper-pagination {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 30px;
+        height: 30px;
+        border: 3px solid var(--color-secondary);
+        background-color: var(--color-white);
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: var(--color-primary);
     }
 }
