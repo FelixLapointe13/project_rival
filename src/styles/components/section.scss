@@ -3,6 +3,45 @@
     text-align: center;
 }
 
+.accueil__cartes {
+    .cartes {
+        margin: 100px 0;
+    }
+
+    img {
+        position: relative;
+        border-radius: 18px;
+        width: 25%;
+        object-fit: cover;
+    }
+
+    .pivot__gauche {
+        transform: rotate(-10deg) translateX(50px) translateY(35px);
+    }
+
+    .pivot__droite {
+        transform: rotate(10deg) translateX(-50px) translateY(35px);
+    }
+}
+
+.accueil__produits {
+    background-color: var(--color-bg-secondary);
+    .produits {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 60px 0;
+        img {
+            height: 252px;
+        }
+
+        @media (width <= $breakpoint-sm) {
+            flex-direction: column;
+            gap: 50px;
+        }
+    }
+}
+
 .accueil__contexte {
     .contexte__content {
         margin-top: 60px;
