@@ -1,0 +1,27 @@
+.swiper {
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    @media (width <= $breakpoint-md) {
+        gap: 15px;
+    }
+}
+
+.swiper-pagination-bullet {
+    width: 30px;
+    height: 30px;
+    border: 3px solid var(--color-secondary);
+    background-color: var(--color-white);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--color-primary);
+}

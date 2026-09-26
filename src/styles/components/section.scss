@@ -84,25 +84,4 @@
     .carousel {
         margin: 100px 0;
     }
-
-    .swiper-pagination {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-
-        @media (width <= $breakpoint-md) {
-            gap: 15px;
-        }
-    }
-
-    .swiper-pagination-bullet {
-        width: 30px;
-        height: 30px;
-        border: 3px solid var(--color-secondary);
-        background-color: var(--color-white);
-    }
-
-    .swiper-pagination-bullet-active {
-        background-color: var(--color-primary);
-    }
 }
