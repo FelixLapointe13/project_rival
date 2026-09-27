@@ -10,6 +10,9 @@
 
     .logo_rival {
         height: 100%;
+        display: flex;
+        gap: 30px;
+        align-items: center;
         img {
             height: 70px;
         }
