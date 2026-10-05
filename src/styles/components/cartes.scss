@@ -22,6 +22,8 @@
     }
 }
 
+// Css pour la partie de la page "Chase cards"
+
 .cartes_chasses {
     display: flex;
     flex-direction: column;
@@ -33,6 +35,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     .carte_chasse_content {
         display: flex;
         flex-direction: column;
@@ -43,12 +46,23 @@
         padding: 30px 60px;
         border: 3px solid var(--color-secondary);
         border-radius: 10px;
+
+        @media (width <= $breakpoint-sm) {
+            p {
+                display: -webkit-box;
+                -webkit-line-clamp: 3; /* Number of lines to show */
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
     }
 
     .carte_chasse_media {
         img {
             height: 480px;
             transform: rotate(10deg);
+            object-fit: contain;
         }
     }
 

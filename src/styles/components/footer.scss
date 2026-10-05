@@ -29,6 +29,7 @@
         align-items: center;
         gap: 50px;
         list-style: none;
+        padding: 0;
 
         @media (width <= $breakpoint-xs) {
             flex-direction: column;
