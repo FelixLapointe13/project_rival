@@ -37,4 +37,117 @@
             display: block;
         }
     }
+
+    /* HEADER TOGGLE */
+
+    .header__toggle {
+        --bar-height: 5px;
+        --bar-width: 50px;
+        --bar-spacer: 12px;
+
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 0;
+        position: relative;
+        width: var(--bar-width);
+        height: var(--bar-width);
+        z-index: 10;
+        display: none;
+
+        span {
+            background: var(--color-primary);
+            border-radius: 3px;
+            height: var(--bar-height);
+            width: 100%;
+            position: absolute;
+            top: calc(50% - var(--bar-height) / 2);
+            left: calc(50% - var(--bar-width) / 2);
+            transition: 0.3s all ease-out;
+
+            &:nth-child(1) {
+                top: calc(
+                    50% - var(--bar-height) /
+                        2 - var(--bar-height) - var(--bar-spacer)
+                );
+            }
+
+            &:nth-child(3) {
+                top: calc(
+                    50% - var(--bar-height) / 2 + var(--bar-height) +
+                        var(--bar-spacer)
+                );
+            }
+        }
+
+        .nav-is-active & {
+            span {
+                top: calc(50% - var(--bar-height) / 2);
+
+                &:nth-child(1) {
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2) {
+                    transform: scaleX(0);
+                }
+                &:nth-child(3) {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+        @media (width <= $breakpoint-sm) {
+            display: block;
+        }
+    }
+
+    @media (width <= $breakpoint-sm) {
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+    }
+}
+
+.header__menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 500px;
+    background-color: var(--color-bg-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-600px);
+
+    transition: transform 0.6s ease-in-out;
+
+    .nav-is-active & {
+        transform: translateY(0px);
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .logo__mobile {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        img {
+            height: 100px;
+        }
+    }
+
+    .menu__mobile {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        align-items: center;
+        gap: 30px;
+    }
 }

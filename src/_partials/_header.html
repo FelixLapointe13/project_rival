@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header" data-component="Header">
         <div class="wrapper">
             <a href="index.html" class="logo_rival">
                 <img src="assets/images/project_rival_logo.png" alt="Project: Rival logo">
@@ -23,9 +23,26 @@
                     <li><a href="produits.html">Produits</a></li>
                     <li><a href="chasse_cards.html">Chase cards</a></li>
                 </ul>
-                <svg class="icon icon--lg icone js-toggle">
-                    <use href="#icon-menu-burger"></use>
-                </svg>
+                <button class="header__toggle js-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                </button>
         </div>
+
+        <section class="header__menu">
+            <div class="wrapper">
+                <div class="logo__mobile">
+                    <img src="assets/images/project_rival_logo.png" alt="Project Rival Logo">
+                    <h2>Project: Rival</h2>
+                </div>
+                <ul class="menu__mobile">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="cartes.html">Cartes</a></li>
+                    <li><a href="produits.html">Produits</a></li>
+                    <li><a href="chasse_cards">Chase cards</a></li>
+                </ul>
+            </div>
+        </section>
     </header>
 </html>
