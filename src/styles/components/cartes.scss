@@ -59,6 +59,8 @@
     }
 
     .carte_chasse_media {
+        position: relative;
+        z-index: 3;
         img {
             height: 480px;
             transform: rotate(10deg);
