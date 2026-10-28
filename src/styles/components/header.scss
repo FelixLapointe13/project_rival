@@ -1,11 +1,33 @@
 .header {
-    background-color: var(--color-bg-secondary);
+    height: 100px;
     padding: 15px 0;
+    z-index: 7;
+    width: 100%;
+    top: 0;
+    position: sticky;
+    transition: transform 0.5s $ease-in-cubic;
+
+    &::before {
+        background-color: var(--color-bg-secondary);
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+    }
 
     .wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
+        z-index: 5;
+    }
+
+    .header-is-hidden.is-scrolling-down:not(.nav-is-active) & {
+        transform: translateY(-100%) translateY(4px);
     }
 
     .logo_rival {
